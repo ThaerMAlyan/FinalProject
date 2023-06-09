@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.Sign_inController">
+   <children>
+      <TextField fx:id="emailRe" layoutX="2.0" layoutY="92.0" prefHeight="25.0" prefWidth="331.0" promptText="user@gmail.com" />
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="290.0" layoutY="89.0" prefHeight="32.0" prefWidth="49.0" text="Email" />
+      <PasswordField fx:id="passwordRe" layoutX="2.0" layoutY="148.0" prefHeight="25.0" prefWidth="331.0" />
+      <Label layoutX="276.0" layoutY="145.0" prefHeight="32.0" prefWidth="57.0" text="Password" />
+      <TextField fx:id="tfFirstName" layoutY="220.0" prefHeight="25.0" prefWidth="158.0" promptText="firstName" />
+      <TextField fx:id="tfLastName" layoutX="175.0" layoutY="220.0" prefHeight="25.0" prefWidth="158.0" promptText="LastName" />
+      <TextField fx:id="textFieldAge" layoutX="175.0" layoutY="277.0" prefHeight="25.0" prefWidth="158.0" promptText="Age" />
+      <TextField fx:id="textFieldPhone" layoutX="2.0" layoutY="339.0" prefHeight="25.0" prefWidth="331.0" promptText="Phone" />
+      <RadioButton fx:id="radioUser" layoutX="64.0" layoutY="401.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="89.0" selected="true" text="User">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="role" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioFamel" layoutX="88.0" layoutY="276.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="69.0" layoutY="22.0" prefHeight="41.0" prefWidth="147.0" text="Register">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSign" layoutX="93.0" layoutY="462.0" mnemonicParsing="false" onAction="#buttonSignAction" prefHeight="32.0" prefWidth="147.0" styleClass="signIn" stylesheets="@../Css/style.css" text="Register">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="554.0" fitWidth="426.0" layoutX="343.0" layoutY="-4.0">
+         <image>
+            <Image url="@../image/undraw_Access_account_re_8spm.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioMale" layoutX="20.0" layoutY="276.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" selected="true" text="Male" toggleGroup="$gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioAdmin" layoutX="208.0" layoutY="401.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="89.0" text="Admin" toggleGroup="$role">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

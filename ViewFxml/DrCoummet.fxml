@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="563.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.DrCoummetController">
+   <children>
+      <Button fx:id="saveCuoment" layoutX="51.0" layoutY="242.0" mnemonicParsing="false" onAction="#saveCuomentAction" prefHeight="28.0" prefWidth="120.0" styleClass="loginButton" stylesheets="@../Css/style.css" text="Save">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfDrCoumment" layoutX="51.0" layoutY="37.0" prefHeight="91.0" prefWidth="420.0" promptText="DrCoumment..." />
+      <RadioButton fx:id="radioWaiting" layoutX="178.0" layoutY="168.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="104.0" selected="true" text="Waiting">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="state" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioFinished" layoutX="359.0" layoutY="168.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="112.0" text="Finished" toggleGroup="$state">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="51.0" layoutY="167.0" prefHeight="30.0" prefWidth="87.0" text="Status :  ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
